@@ -1,0 +1,16 @@
+{
+  "name": "zip-weather",
+  "private": true,
+  "source": "src/index.html",
+  "type": "module",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}

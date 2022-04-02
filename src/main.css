@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap");
+
+/*
+  CSS Resets
+  Credit: https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* App CSS */
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8ecec;
+}
+
+header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header span {
+  color: #2e8b57;
+}
+
+main {
+  flex: 1;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+main form label, main form input {
+  display: block;
+}
+
+main form label {
+  padding-bottom: 0.25rem;
+}
+
+main form input {
+  margin-bottom: 0.5rem;
+}
+
+main form button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #20643e;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+main form button:hover, main form button:focus {
+  background-color: #133f26;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+main form button:hover {
+  transform: translateY(-1px);
+}
+
+main form button:active {
+  background-color: #133f26;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+main output {
+  text-align: center;
+}
+
+main output small {
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-size: .75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #28794b;
+  font-weight: 400;
+}
+
+footer a:hover {
+  color: #20643e;
+  font-weight: 700;
+}
